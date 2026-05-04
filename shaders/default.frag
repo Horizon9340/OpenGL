@@ -1,0 +1,11 @@
+#version 410 core
+out vec4 FragColor;
+
+in vec3 color;
+
+// uniform float scale; <- unused in fragment shader
+
+void main()
+{
+    FragColor = vec4(color, 1.0f);
+}
