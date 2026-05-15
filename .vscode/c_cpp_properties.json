@@ -4,8 +4,10 @@
             "name": "Mac",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/glad",
-                "/opt/homebrew/opt/glfw/include"
+                "${workspaceFolder}/headers",
+                "${workspaceFolder}/external",
+                "/opt/homebrew/include",
+                "external/"
             ],
             "defines": [],
             "cStandard": "c17",
