@@ -7,6 +7,7 @@ src/main.cpp \
 src/shaderClass.cpp \
 src/VAO.cpp src/VBO.cpp \
 src/EBO.cpp \
+src/camera.cpp \
 external/glad/src/glad.c
 
 TARGET = program

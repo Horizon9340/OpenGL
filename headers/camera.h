@@ -1,6 +1,8 @@
 #ifndef CAMERA_CLASS_H
 #define CAMERA_CLASS_H
 
+#define GLM_ENABLE_EXPERIMENTAL // Enable exoerimental extensions or face wrath
+
 // Include LOTS of libraries
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
@@ -28,8 +30,8 @@ class Camera
     Camera(int width, int height, glm::vec3 position);
 
     void Matrix(float FOVdeg, float nearPlane, float farPlane, Shader& shader, const char* uniform);
-    void Inputs(GLFWwindow* window);
-    
+
+    void Inputs(GLFWwindow* window); // Initializes camera key inputs
 };
 
 #endif
