@@ -112,7 +112,6 @@ int main()
     EBO1.Delete();
     shaderProgram.Delete();
 
-
     // Kill window and everything else
     glfwDestroyWindow(window);
     glfwTerminate();
