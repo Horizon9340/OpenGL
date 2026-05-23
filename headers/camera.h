@@ -1,7 +1,7 @@
 #ifndef CAMERA_CLASS_H
 #define CAMERA_CLASS_H
 
-#define GLM_ENABLE_EXPERIMENTAL // Enable exoerimental extensions or face wrath
+#define GLM_ENABLE_EXPERIMENTAL // Enable experimental extensions or face wrath
 
 // Include LOTS of libraries
 #include <glad/glad.h>

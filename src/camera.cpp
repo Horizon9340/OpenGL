@@ -58,6 +58,13 @@ void Camera::Inputs(GLFWwindow* window)
     speed = 0.1f;
   }
 
+  /*
+
+  README:
+
+  The mouse inputs make no sense. I'm gonna figure this out some other time.
+
+
   // Mouse inputs
   
   // ** NOT COMPLETE **
@@ -65,13 +72,21 @@ void Camera::Inputs(GLFWwindow* window)
   {
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
 
-      double mouseX, mouseY;
+    double mouseX, mouseY;
+    glfwGetCursorPos(window, &mouseX, &mouseY);
 
-      glfwGetCursorPos(window, &mouseX, &mouseY);
+    float rotX = sensitivity * (float)(mouseY - (height / 2)) / height;
+    float rotY = sensitivity * (float)(mouseX - (height / 2)) / height;
+
+    glm::vec3 newOrientation = glm::rotate(Orientation, glm::radians(-rotX), glm::normalize(glm::cross(Orientation, Up)));
+
   }
 
   if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_RELEASE)
   {
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
   }
+    */
+
+
 }
